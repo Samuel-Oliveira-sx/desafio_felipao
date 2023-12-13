@@ -1,0 +1,28 @@
+nome_heroi = input("Digite o nome do herói: ")
+
+experiencia_xp = int(input("Digite a quantidade de experiência do herói: "))
+
+
+nivel = ""
+
+
+if experiencia_xp < 1000:
+  nivel = "Ferro"
+elif experiencia_xp >= 1000 and experiencia_xp <= 2000:
+  nivel = "Bronze"
+elif experiencia_xp >= 2001 and experiencia_xp <= 5000:
+  nivel = "Prata"
+elif experiencia_xp >= 6001 and experiencia_xp <= 7000:
+  nivel = "Ouro"
+elif experiencia_xp >= 7001 and experiencia_xp <= 8000:
+  nivel = "Platina"
+elif experiencia_xp >= 8001 and experiencia_xp <= 9000:
+  nivel = "Ascendente"
+elif experiencia_xp >= 9001 and experiencia_xp <= 10000:
+  nivel = "Imortal"
+else:
+  nivel = "Radiante"
+
+
+print(f"O Herói de nome {nome_heroi} está no nível de {nivel}")
+
