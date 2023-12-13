@@ -1,0 +1,14 @@
+def calculadoraRank(vitorias, derrotas):
+    saldoVitorias = vitorias - derrotas
+    niveis = [(10, 'Ferro'), (20, 'Bronze'), (50, 'Prata'), (80, 'Ouro'), (90, 'Diamante'), (100, 'Lendário')]
+    
+    for v, nivel in niveis:
+        if saldoVitorias <= v:
+            break
+    else:
+        nivel = 'Imortal'
+
+    print(f"O Herói tem de saldo de {saldoVitorias} está no nível de {nivel}")
+
+
+calculadoraRank(100, 20)
